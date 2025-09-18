@@ -1,0 +1,24 @@
+{
+  "name": "web-explainer",
+  "version": "1.0.0",
+  "description": "this is main task is to simplify a webpage via llm",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "testing":"node testing.js"
+  },
+  "author": "tuhin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsdom": "^27.0.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "@google/genai": "^1.20.0"
+  }
+}
