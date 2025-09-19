@@ -2,7 +2,7 @@
   "name": "web-explainer",
   "version": "1.0.0",
   "description": "this is main task is to simplify a webpage via llm",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

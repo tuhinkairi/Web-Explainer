@@ -1,16 +1,21 @@
 import express from "express";
 import dotenv from "dotenv";
 import runAgent from "./runner.js";
+import path from "path";
 
 dotenv.config();
 
 const app = express();
 const port = 3000;
 
+// middleware
+app.use(express.static(path.resolve("template"))); 
+
 // Serve frontend HTML
 app.get("/", (req, res) => {
-  res.sendFile(process.cwd() + "/template/index.html");
+  res.sendFile(path.resolve("template/index.html"));
 });
+
 
 // SSE endpoint for streaming
 app.get("/stream", async (req, res) => {
